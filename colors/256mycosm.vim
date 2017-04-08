@@ -42,7 +42,7 @@ hi Cursor ctermbg=15	 ctermfg=0
 hi lCursor ctermbg=15	 ctermfg=0	
 
 " Diff
-hi DiffText ctermbg=11	 ctermfg=15	 cterm=bold
+hi DiffText ctermbg=11	 ctermfg=0	 cterm=bold
 hi DiffAdd ctermbg=18	 ctermfg=15	
 hi DiffChange ctermbg=245	 ctermfg=15	
 hi DiffDelete ctermbg=18	 ctermfg=21	 cterm=bold
@@ -51,7 +51,7 @@ hi DiffDelete ctermbg=18	 ctermfg=21	 cterm=bold
 hi Title ctermfg=15	 cterm=bold
 hi Question ctermbg=0	 ctermfg=0	 cterm=bold
 hi Todo  ctermbg=0	 ctermfg=21	
-hi Error ctermbg=11	 ctermfg=15	
+hi Error ctermbg=11	 ctermfg=0
 hi WildMenu ctermbg=21	 ctermfg=0	
 
 
