@@ -17,6 +17,8 @@ let g:go_highlight_methods = 1
 let g:go_auto_type_info = 1
 let g:go_fmt_fail_silently = 1
 let g:go_term_enabled = 1
+let g:go_def_mode = 'gopls'
+let g:go_info_mode = 'gopls'
 
 filetype plugin indent on
 
@@ -50,6 +52,7 @@ let g:syntastic_go_checkers = ["go", "govet"]
 
 let g:ale_linters = {'go': ['goimports', 'go build'], 'perl': ['perl']}
 let g:ale_open_list = 0
+let g:ale_go_bingo_executable = 'gopls'
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
