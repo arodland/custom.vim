@@ -1,6 +1,7 @@
 call lh#local_vimrc#munge('whitelist', $HOME.'/code')
 
 let g:airline_skip_empty_sections = 1
+let g:airline#extensions#ale#enabled = 1
 
 let perl_fold = 1
 let perl_fold_blocks = 1
@@ -44,16 +45,9 @@ let g:tagbar_singleclick=1
 let g:ycm_add_preview_to_completeopt=1
 let g:ycm_autoclose_preview_window_after_insertion=1
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_go_checkers = ["go", "govet"]
-
-let g:ale_linters = {'go': ['goimports', 'go build'], 'perl': ['perl']}
+let g:ale_linters = {'go': ['goimports', 'go build', 'govet', 'gosimple'], 'perl': ['perl']}
 let g:ale_open_list = 0
-let g:ale_go_bingo_executable = 'gopls'
+let g:ale_go_langserver_executable = 'gopls'
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
-
