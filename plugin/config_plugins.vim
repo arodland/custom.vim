@@ -2,6 +2,11 @@ call lh#local_vimrc#munge('whitelist', $HOME.'/code')
 
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#branch#use_vcscommand = 1
+let g:airline#extensions#vista#enabled = 1
+
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 
 let perl_fold = 1
 let perl_fold_blocks = 1
@@ -25,7 +30,7 @@ filetype plugin indent on
 
 vmap ,, ""d:let[a,b]=[@",@"]\|let a=substitute(tolower(a),"[^a-z]","_","g")\|let @"="<a href=\"#".a."\">".b."</a>"<Esc>P
 
-command! -range=% -nargs=* Tidy <line1>,<line2>! 
+command! -range=% -nargs=* Tidy <line1>,<line2>!
         \perltidy -l=120 -i=2 -ci=2 -ole=unix -nola -nwls="**" -nwrs="**" -olc -ce -bar <args>
 
 command! Sign %!gpg --clearsign
