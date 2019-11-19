@@ -40,7 +40,7 @@ let g:ctrlp_custom_ignore = {
     \ 'dir': '\v[\/](local|fixtures|\.git|\.svn)',
     \ }
 
-nnoremap <silent> <F9> :TagbarToggle<CR>
+nnoremap <silent> <F9> :Vista!!<CR>
 let g:tagbar_singleclick=1
 "let g:tagbar_autopreview=1
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
