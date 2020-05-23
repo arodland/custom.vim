@@ -42,6 +42,8 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 nnoremap <silent> <F9> :Vista!!<CR>
+nnoremap <silent> <C-F> :Vista finder<CR>
+let g:vista_default_executive='vim_lsp'
 let g:tagbar_singleclick=1
 "let g:tagbar_autopreview=1
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
