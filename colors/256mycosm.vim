@@ -54,6 +54,9 @@ hi Todo  ctermbg=0	 ctermfg=21	guibg=grey6 guifg=blue
 hi Error ctermbg=202 ctermfg=0 guibg=#ff5500 guifg=white
 hi WildMenu ctermbg=21	 ctermfg=0 guibg=blue guifg=black
 
+" Popup / Autocomplete
+hi Pmenu ctermbg=67 ctermfg=15 guibg=steelblue guifg=white
+hi PmenuSel ctermbg=75 ctermfg=15 guibg=steelblue1 guifg=white
 
 " -----------------------------------------------------------------------------
 " Primary (active/code/text/grey background)
