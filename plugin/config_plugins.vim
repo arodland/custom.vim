@@ -41,9 +41,14 @@ let g:ctrlp_custom_ignore = {
     \ 'dir': '\v[\/](local|fixtures|\.git|\.svn)',
     \ }
 
-nnoremap <silent> <F9> :Vista!!<CR>
-nnoremap <silent> <C-F> :Vista finder<CR>
-let g:vista_default_executive='vim_lsp'
+if has("nvim")
+  nnoremap <silent> <F9> :SymbolsOutline<CR>
+else
+  nnoremap <silent> <F9> :Vista!!<CR>
+  nnoremap <silent> <C-F> :Vista finder<CR>
+  let g:vista_default_executive='vim_lsp'
+endif
+
 let g:tagbar_singleclick=1
 "let g:tagbar_autopreview=1
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
