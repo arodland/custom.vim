@@ -43,6 +43,7 @@ let g:ctrlp_custom_ignore = {
 
 if has("nvim")
   nnoremap <silent> <F9> :SymbolsOutline<CR>
+  autocmd BufEnter * lua require'completion'.on_attach()
 else
   nnoremap <silent> <F9> :Vista!!<CR>
   nnoremap <silent> <C-F> :Vista finder<CR>

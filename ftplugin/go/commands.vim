@@ -23,5 +23,6 @@ map ,d <Plug>(go-describe)
 map ,D <Plug>(go-doc)
 map <C-]> <Plug>(go-def-vertical)
 map ,i <Plug>(go-implements)
+map ,I <Esc>:GoImports<CR>
 map ,R <Plug>(go-referrers)
 map ,p <Plug>(go-toggle-public)
