@@ -14,7 +14,6 @@ let perl_include_pod = 1
 let perl_extended_vars = 1
 let perl_want_scope_in_variables = 1
 
-let g:go_fmt_autosave = 0 " provided by custom.vim/plugin/gofmt instead
 let g:go_dispatch_enabled = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
