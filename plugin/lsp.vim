@@ -1,6 +1,7 @@
 if has("nvim")
   lua require'lspconfig'.gopls.setup{}
   lua require'lspconfig'.pyls.setup{}
+  lua require'navigator'.setup()
   lua require'lspconfig'.perlls.setup{}
 else
   if executable('perl-lsp')

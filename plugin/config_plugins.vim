@@ -50,6 +50,10 @@ else
   let g:vista_default_executive='vim_lsp'
 endif
 
+if has("nvim")
+  lua require('gitsigns').setup()
+endif
+
 let g:tagbar_singleclick=1
 "let g:tagbar_autopreview=1
 "autocmd VimEnter * nested :call tagbar#autoopen(1)
