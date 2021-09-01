@@ -52,6 +52,8 @@ endif
 
 if has("nvim")
   lua require('gitsigns').setup()
+  lua require('lsp_signature').setup({ bind=true, floating_window=false })
+  let g:completion_enable_auto_signature = 0
 endif
 
 let g:tagbar_singleclick=1
