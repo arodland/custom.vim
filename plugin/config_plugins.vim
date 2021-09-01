@@ -28,6 +28,8 @@ let g:go_def_mode = 'gopls'
 let g:go_info_mode = 'gopls'
 let g:go_rename_command = 'gopls'
 
+let g:context_nvim_no_redraw = 1
+
 filetype plugin indent on
 
 vmap ,, ""d:let[a,b]=[@",@"]\|let a=substitute(tolower(a),"[^a-z]","_","g")\|let @"="<a href=\"#".a."\">".b."</a>"<Esc>P
