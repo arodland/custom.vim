@@ -1,6 +1,13 @@
 if has("nvim")
   lua require'lspconfig'.gopls.setup{}
-  lua require'navigator'.setup()
+  lua << EOF
+  require'navigator'.setup({
+    keymaps = {
+      { key = "<C-j>", func = "diagnostic.goto_next({ border = 'single' })" },
+      { key = "<C-k>", func = "diagnostic.goto_prev({ border = 'single' })" },
+    },
+  })
+EOF
   lua require'lspconfig'.perlls.setup{}
 else
   if executable('perl-lsp')
