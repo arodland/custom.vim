@@ -1,5 +1,8 @@
 if has("nvim")
   lua require'lspconfig'.gopls.setup{}
+  lua require'lspconfig'.perlls.setup{}
+  lua require'lspconfig'.pylsp.setup{}
+
   lua << EOF
   require'navigator'.setup({
     keymaps = {
@@ -8,7 +11,6 @@ if has("nvim")
     },
   })
 EOF
-  lua require'lspconfig'.perlls.setup{}
 else
   if executable('perl-lsp')
     au User lsp_setup call lsp#register_server({
