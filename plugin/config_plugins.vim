@@ -7,6 +7,7 @@ let g:airline#extensions#branch#use_vcscommand = 1
 let g:airline#extensions#vista#enabled = 1
 
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline_symbols.maxlinenr=''
 
 let perl_fold = 1
 let perl_fold_blocks = 1
