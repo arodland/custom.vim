@@ -65,14 +65,4 @@ let g:tagbar_singleclick=1
 "autocmd FileType * nested :call tagbar#autoopen(0)
 "autocmd BufEnter * nested :call tagbar#autoopen(0)
 
-let g:ycm_add_preview_to_completeopt=1
-let g:ycm_autoclose_preview_window_after_insertion=1
-
-let g:ale_linters = {'go': ['goimports', 'go build', 'govet', 'gosimple'], 'perl': ['perl']}
-let g:ale_open_list = 0
-let g:ale_go_langserver_executable = 'gopls'
-
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
-
 let g:vimwiki_list = [{'path': '~/Sync/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
