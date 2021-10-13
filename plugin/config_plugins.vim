@@ -48,6 +48,7 @@ if has("nvim")
   nnoremap <silent> <F9> :SymbolsOutline<CR>
   let g:coq_settings = { 'display.pum.fast_close': v:false, 'auto_start': 'shut-up' }
   lua require('coq')
+  autocmd BufEnter * COQnow --shut-up
 else
   nnoremap <silent> <F9> :Vista!!<CR>
   nnoremap <silent> <C-F> :Vista finder<CR>
