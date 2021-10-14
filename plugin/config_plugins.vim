@@ -45,11 +45,13 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 if has("nvim")
+  nnoremap <silent> <F8> :CHADopen<CR>
   nnoremap <silent> <F9> :SymbolsOutline<CR>
   let g:coq_settings = { 'display.pum.fast_close': v:false, 'auto_start': 'shut-up' }
   lua require('coq')
   autocmd BufEnter * COQnow --shut-up
 else
+  nnoremap <silent> <F8> :NERDTree<CR>
   nnoremap <silent> <F9> :Vista!!<CR>
   nnoremap <silent> <C-F> :Vista finder<CR>
   let g:vista_default_executive='vim_lsp'
@@ -58,6 +60,7 @@ endif
 if has("nvim")
   lua require('gitsigns').setup()
   lua require('lsp_signature').setup({ bind=true, floating_window=false })
+  lua require('toggleterm').setup{ open_mapping = [[<F10>]], insert_mappings = true, direction = 'float' }
 endif
 
 let g:tagbar_singleclick=1
