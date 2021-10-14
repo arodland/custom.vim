@@ -61,6 +61,7 @@ if has("nvim")
   lua require('gitsigns').setup()
   lua require('lsp_signature').setup({ bind=true, floating_window=false })
   lua require('toggleterm').setup{ open_mapping = [[<F10>]], insert_mappings = true, direction = 'float' }
+  lua require('indent_blankline').setup{ filetype = {"yaml","vim"} }
 endif
 
 let g:tagbar_singleclick=1
