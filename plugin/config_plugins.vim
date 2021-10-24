@@ -45,6 +45,7 @@ let g:ctrlp_custom_ignore = {
     \ }
 
 if has("nvim")
+  nnoremap <silent> <F7> :Telescope<CR>
   nnoremap <silent> <F8> :CHADopen<CR>
   nnoremap <silent> <F9> :SymbolsOutline<CR>
   let g:coq_settings = { 'display.pum.fast_close': v:false, 'auto_start': 'shut-up' }
