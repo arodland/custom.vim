@@ -37,38 +37,16 @@ vmap ,, ""d:let[a,b]=[@",@"]\|let a=substitute(tolower(a),"[^a-z]","_","g")\|let
 command! -range=% -nargs=* Tidy <line1>,<line2>!
         \perltidy -l=120 -i=2 -ci=2 -ole=unix -nola -nwls="**" -nwrs="**" -olc -ce -bar <args>
 
-command! Sign %!gpg --clearsign
-
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_custom_ignore = {
-    \ 'dir': '\v[\/](local|fixtures|\.git|\.svn)',
-    \ }
-
 if has("nvim")
-  nnoremap <silent> <F7> :Telescope<CR>
-  nnoremap <silent> <F8> :CHADopen<CR>
-  nnoremap <silent> <F9> :SymbolsOutline<CR>
   let g:coq_settings = { 'display.pum.fast_close': v:false, 'auto_start': 'shut-up' }
   lua require('coq')
   autocmd BufEnter * COQnow --shut-up
-else
-  nnoremap <silent> <F8> :NERDTree<CR>
-  nnoremap <silent> <F9> :Vista!!<CR>
-  nnoremap <silent> <C-F> :Vista finder<CR>
-  let g:vista_default_executive='vim_lsp'
-endif
-
-if has("nvim")
   lua require('gitsigns').setup()
   lua require('lsp_signature').setup({ bind=true, floating_window=false })
   lua require('toggleterm').setup{ open_mapping = [[<F10>]], insert_mappings = true, direction = 'float' }
   lua require('indent_blankline').setup{ filetype = {"yaml","vim"} }
+else
+  let g:vista_default_executive='vim_lsp'
 endif
-
-let g:tagbar_singleclick=1
-"let g:tagbar_autopreview=1
-"autocmd VimEnter * nested :call tagbar#autoopen(1)
-"autocmd FileType * nested :call tagbar#autoopen(0)
-"autocmd BufEnter * nested :call tagbar#autoopen(0)
 
 let g:vimwiki_list = [{'path': '~/Sync/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
