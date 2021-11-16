@@ -2,6 +2,7 @@ if has("nvim")
   lua require'lspconfig'.gopls.setup{}
   lua require'lspconfig'.perlls.setup{}
   lua require'lspconfig'.pylsp.setup{}
+  lua require'lspconfig'.fortls.setup{}
 
   lua << EOF
   require'navigator'.setup({
