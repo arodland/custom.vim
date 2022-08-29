@@ -1,6 +1,6 @@
 syn on
 syn sync fromstart
-set ts=2 sts=2 sw=2 sr et
+set ts=4 sts=4 sw=4 sr et
 set tw=0
 set noai cindent
 set mouse=a

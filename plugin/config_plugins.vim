@@ -15,7 +15,7 @@ let perl_include_pod = 1
 let perl_extended_vars = 1
 let perl_want_scope_in_variables = 1
 
-" let g:go_fmt_autosave = 0 " let LSP do it
+"let g:go_fmt_autosave = 0 " let LSP do it
 let g:go_dispatch_enabled = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -47,6 +47,7 @@ if has("nvim")
   lua require('lsp_signature').setup({ bind=true, floating_window=false })
   lua require('toggleterm').setup{ open_mapping = [[<F10>]], insert_mappings = true, direction = 'float' }
   lua require('indent_blankline').setup{ filetype = {"yaml","vim"} }
+  lua require('symbols-outline').setup()
 else
   let g:vista_default_executive='vim_lsp'
 endif

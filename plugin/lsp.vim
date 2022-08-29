@@ -7,9 +7,17 @@ if has("nvim")
   lua << EOF
   require'navigator'.setup({
     keymaps = {
-      { key = "<C-j>", func = "diagnostic.goto_next({ border = 'single' })" },
-      { key = "<C-k>", func = "diagnostic.goto_prev({ border = 'single' })" },
+      { key = "<C-j>", func = vim.diagnostic.goto_next, desc = "next diagnostic" },
+      { key = "<C-k>", func = vim.diagnostic.goto_prev, desc = "prev diagnostic" },
+      { key = "<Leader>gd", func = require('navigator.definition').definition, desc = "navigator goto definition" },
+      { key = "gd", func = function() require('telescope.builtin').lsp_definitions({jump_type='never'}) end, desc = "telescope goto definition" },
+      { key = "gr", func = function() require('telescope.builtin').lsp_references({jump_type='never'}) end, desc = "telescope goto definition" },
     },
+    lsp = {
+      format_on_save = false,
+      diagnostic_scrollbar_sign = false,
+      display_diagnostic_qf = false,
+    }
   })
 EOF
 else
