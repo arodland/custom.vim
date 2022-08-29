@@ -19,6 +19,9 @@ if has("nvim")
       display_diagnostic_qf = false,
     }
   })
+  vim.diagnostic.config({
+    float = { border = 'none' }
+  })
 EOF
 else
   if executable('perl-lsp')
