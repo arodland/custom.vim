@@ -3,7 +3,7 @@ if has("gui_running")
   set guifont=DejaVu\ Sans\ Mono\ 16
   let g:airline_theme='papercolor'
 else
-  if $TERM =~ "xterm-color" || $TERM =~ "xterm-kitty" || $TERM =~ "256color"
+  if $TERM =~ "xterm-color" || $TERM =~ "xterm-kitty" || $TERM =~ "256color" || $TERM =~ "linux"
     set t_Co=256
     if $NCURSES_NO_UTF8_ACS !~ "1"
       set termguicolors

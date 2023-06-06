@@ -17,6 +17,7 @@ if has("nvim")
       format_on_save = false,
       diagnostic_scrollbar_sign = false,
       display_diagnostic_qf = false,
+      disable_lsp = {'sqls'},
     }
   })
   vim.diagnostic.config({

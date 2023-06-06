@@ -46,8 +46,12 @@ if has("nvim")
   lua require('gitsigns').setup()
   lua require('lsp_signature').setup({ bind=true, floating_window=false })
   lua require('toggleterm').setup{ open_mapping = [[<F10>]], insert_mappings = true, direction = 'float' }
-  lua require('indent_blankline').setup{ filetype = {"yaml","vim"} }
+  lua require('indent_blankline').setup{ filetype = {"yaml","vim"}, show_current_context = true, show_current_context_start = true }
   lua require('symbols-outline').setup()
+  " lua require('copilot').setup({panel={auto_refresh=true}, suggestion={auto_trigger=true}})
+  lua require('copilot').setup({panel={auto_refresh=true}})
+  lua require('telescope').setup()
+  lua require('nvim-tree').setup({diagnostics={enable=true,icons={hint="💁",info="👩",warning="👎",error="📛"}},modified={enable=true},tab={sync={open=true,close=true}}})
 else
   let g:vista_default_executive='vim_lsp'
 endif
