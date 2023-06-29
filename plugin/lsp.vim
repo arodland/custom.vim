@@ -18,6 +18,7 @@ if has("nvim")
       diagnostic_scrollbar_sign = false,
       display_diagnostic_qf = false,
       disable_lsp = {'sqls'},
+      hover = false,
     }
   })
   vim.diagnostic.config({

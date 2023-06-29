@@ -21,7 +21,7 @@ let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
-let g:go_auto_type_info = 1
+let g:go_auto_type_info = 0
 let g:go_fmt_fail_silently = 1
 let g:go_term_enabled = 1
 let g:go_doc_balloon = 1
@@ -29,8 +29,6 @@ let g:go_def_mode = 'gopls'
 let g:go_info_mode = 'gopls'
 let g:go_rename_command = 'gopls'
 let g:go_def_mapping_enabled = 0
-
-let g:context_nvim_no_redraw = 1
 
 filetype plugin indent on
 

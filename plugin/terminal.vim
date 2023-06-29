@@ -1,6 +1,6 @@
 if has("gui_running")
   colo 256mycosm
-  set guifont=DejaVu\ Sans\ Mono\ 16
+  set guifont="JetBrainsMono Nerd Font Mono:h13:w57"
   let g:airline_theme='papercolor'
 else
   if $TERM =~ "xterm-color" || $TERM =~ "xterm-kitty" || $TERM =~ "256color" || $TERM =~ "linux"
