@@ -14,7 +14,7 @@ set autowrite
 set laststatus=2
 set fillchars=vert:\ ,fold:—,diff:\ 
 set foldtext=substitute(foldtext(),\"-\",\"—\",\"g\")
-set guicursor=
+"set guicursor=
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
