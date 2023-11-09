@@ -28,7 +28,7 @@ let colors_name = "256mycosm"
 hi IncSearch ctermbg=0 ctermfg=14 guibg=grey6 guifg=cyan
 hi Search ctermbg=0 ctermfg=21 guibg=grey6 guifg=#0000ff
 
-" Visual 
+" Visual
 hi Visual ctermbg=0 ctermfg=11 guibg=grey6 guifg=yellow
 hi VisualNOS ctermbg=0 ctermfg=11 cterm=underline guibg=grey6 guifg=yellow gui=underline
 
@@ -38,7 +38,7 @@ hi StatusLineNC ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
 hi VertSplit ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
 
 " Cursors
-hi Cursor ctermbg=15 ctermfg=0 guibg=white guifg=black 
+hi Cursor ctermbg=15 ctermfg=0 guibg=white guifg=black
 hi lCursor ctermbg=15 ctermfg=0 guibg=white guifg=black
 
 " Diff
@@ -65,48 +65,48 @@ hi PmenuSel ctermbg=75 ctermfg=15 guibg=steelblue1 guifg=white
 hi Normal ctermbg=0 ctermfg=15 guibg=grey6 guifg=white
 
 " Constants
-hi Constant ctermbg=0 ctermfg=203 guibg=grey6 guifg=#ff5555
-hi String ctermbg=0 ctermfg=203 guibg=grey6 guifg=#ff5555
-hi Character ctermbg=0 ctermfg=203 guibg=grey6 guifg=#ff5555
-hi Number ctermbg=0 ctermfg=203 guibg=grey6 guifg=#ff5555
-hi Boolean ctermbg=0 ctermfg=203 guibg=grey6 guifg=#ff5555
-hi Float ctermbg=0 ctermfg=203 guibg=grey6 guifg=#ff5555
+hi Constant ctermfg=203 guifg=#ff5555
+hi String ctermfg=203 guifg=#ff5555
+hi Character ctermfg=203 guifg=#ff5555
+hi Number ctermfg=203 guifg=#ff5555
+hi Boolean ctermfg=203 guifg=#ff5555
+hi Float ctermfg=203 guifg=#ff5555
 
 " Identifier
-hi Identifier ctermbg=0 ctermfg=123 guibg=grey6 guifg=#88ffff
-hi Function ctermbg=0 ctermfg=123 guibg=grey6 guifg=#88ffff
+hi Identifier ctermfg=123 guifg=#88ffff
+hi Function ctermfg=123 guifg=#88ffff
 
 " Statement
-hi Statement ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f gui=none
-hi Conditional ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f
-hi Repeat ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f 
-hi Label ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f 
-hi Operator ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f 
-hi Keyword ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f gui=none
-hi Exception ctermbg=0 ctermfg=227 guibg=grey6 guifg=#ffff5f 
+hi Statement ctermfg=227 guifg=#ffff5f gui=none
+hi Conditional ctermfg=227 guifg=#ffff5f
+hi Repeat ctermfg=227 guifg=#ffff5f
+hi Label ctermfg=227 guifg=#ffff5f
+hi Operator ctermfg=227 guifg=#ffff5f
+hi Keyword ctermfg=227 guifg=#ffff5f gui=none
+hi Exception ctermfg=227 guifg=#ffff5f
 
 " PreProc
-hi PreProc ctermbg=0 ctermfg=213 guibg=grey6 guifg=#ff88ff
-hi Include ctermbg=0 ctermfg=213 guibg=grey6 guifg=#ff88ff
-hi Define ctermbg=0 ctermfg=213 guibg=grey6 guifg=#ff88ff
-hi Macro ctermbg=0 ctermfg=213 guibg=grey6 guifg=#ff88ff
-hi PreCondit ctermbg=0 ctermfg=213 guibg=grey6 guifg=#ff88ff
+hi PreProc ctermfg=213 guifg=#ff88ff
+hi Include ctermfg=213 guifg=#ff88ff
+hi Define ctermfg=213 guifg=#ff88ff
+hi Macro ctermfg=213 guifg=#ff88ff
+hi PreCondit ctermfg=213 guifg=#ff88ff
 
 " Type
-hi Type ctermbg=0 ctermfg=83 guibg=grey6 guifg=#5fff5f gui=none
-hi StorageClass ctermbg=0 ctermfg=83 guibg=grey6 guifg=#5fff5f
-hi Structure ctermbg=0 ctermfg=83 guibg=grey6 guifg=#5fff5f
-hi Typedef ctermbg=0 ctermfg=83 guibg=grey6 guifg=#5fff5f
+hi Type ctermfg=83 guifg=#5fff5f gui=none
+hi StorageClass ctermfg=83 guifg=#5fff5f
+hi Structure ctermfg=83 guifg=#5fff5f
+hi Typedef ctermfg=83 guifg=#5fff5f
 
 " Special
-hi Special ctermbg=0 ctermfg=11 guibg=grey6 guifg=yellow
-hi SpecialChar ctermbg=0 ctermfg=11 guibg=grey6 guifg=yellow
-hi Tag ctermbg=0 ctermfg=11 guibg=grey6 guifg=yellow
-hi Delimiter ctermbg=0 ctermfg=11 guibg=grey6 guifg=yellow
-hi Debug ctermbg=0 ctermfg=11 guibg=grey6 guifg=yellow
+hi Special ctermfg=11 guifg=yellow
+hi SpecialChar ctermfg=11 guifg=yellow
+hi Tag ctermfg=11 guifg=yellow
+hi Delimiter ctermfg=11 guifg=yellow
+hi Debug ctermfg=11 guifg=yellow
 
 " Misc
-hi Underlined ctermbg=0 ctermfg=227 cterm=underline guibg=grey6 guifg=#ffff5f gui=underline
+hi Underlined ctermfg=227 cterm=underline guifg=#ffff5f gui=underline
 
 
 " -----------------------------------------------------------------------------
@@ -128,7 +128,7 @@ hi FoldColumn ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
 
 " Misc
 hi Ignore ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
-hi NonText ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45 
+hi NonText ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
 hi LineNr ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
 hi SpecialKey ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
 hi SignColumn ctermbg=0 ctermfg=243 guibg=grey6 guifg=grey45
